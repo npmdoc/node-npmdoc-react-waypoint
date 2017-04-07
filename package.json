@@ -1,17 +1,40 @@
 {
-    "buildNpmdoc":"react-waypoint",
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "buildNpmdoc": "react-waypoint",
+    "description": "api documentation for [react-waypoint (v5.2.1)](https://github.com/brigade/react-waypoint) [![npm package](https://img.shields.io/npm/v/npmdoc-react-waypoint.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-react-waypoint) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-react-waypoint.svg)](https://travis-ci.org/npmdoc/node-npmdoc-react-waypoint)",
     "devDependencies": {
-        "react-waypoint": "*",
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "react-waypoint": "*",
         "utility2": "kaizhu256/node-utility2#alpha"
     },
-    "name":"npmdoc-react-waypoint",
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmdoc/node-npmdoc-react-waypoint",
+    "keywords": [
+        "documentation",
+        "react-waypoint"
+    ],
+    "license": "MIT",
+    "main": "lib.npmdoc_react_waypoint.js",
+    "name": "npmdoc-react-waypoint",
+    "nameAlias": "npmdoc_react_waypoint",
+    "nameOriginal": "npmdoc-react-waypoint",
+    "os": [
+        "darwin",
+        "linux"
+    ],
     "repository": {
         "type": "git",
         "url": "https://github.com/npmdoc/node-npmdoc-react-waypoint"
     },
     "scripts": {
-        "build-ci": "utility2 shReadmeTest build_ci.sh"
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "(set -e; npm install \"kaizhu256/node-utility2#alpha\"; utility2 shDeployHeroku)",
+        "postinstall": "if [ -f npm_scripts.sh ]; then ./npm_scripts.sh postinstall; fi",
+        "start": "(set -e; export PORT=${PORT:-8080}; utility2 start test.js)",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
     },
     "version": "0.0.1"
 }
