@@ -3,7 +3,7 @@
 
 [![NPM](https://nodei.co/npm/react-waypoint.png?downloads=true)](https://www.npmjs.com/package/react-waypoint)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-react-waypoint/build/screenCapture.buildNpmdoc.browser.%2Fhome%2Ftravis%2Fbuild%2Fnpmdoc%2Fnode-npmdoc-react-waypoint%2Ftmp%2Fbuild%2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-react-waypoint/build/apidoc.html)
+[![apidoc](https://npmdoc.github.io/node-npmdoc-react-waypoint/build/screenCapture.buildApidoc.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmdoc%252Fnode-npmdoc-react-waypoint%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-react-waypoint/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-react-waypoint/build/screenCapture.npmPackageListing.svg)
 
